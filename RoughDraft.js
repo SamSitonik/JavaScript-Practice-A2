@@ -1,24 +1,26 @@
 // Relisten to the video! These Questions will be on the interviews. 
-// Q1: Write the function printInt(n) taking one parameter n and print all natural numbers from 1 to n in console.
+// Q1: DONE--Write the function printInt(n) taking one parameter n and print all natural numbers from 1 to n in console.
+// create a function with the correct name, get half point. 
 function printInt(n) {
-    // This needs to be a loop(forloop)
-    for (var i= 1; i<=n, i++) {
-        // console.log it out :)
-        console.log(i);
+    // This needs to be a loop(forloop, when to start and when to stop)
+    for (var i= 1; i<=n; i++) {
+                console.log(i);
     }
 }
-// printInt(100);
-// don't ...
+
+printInt(10);
+// TEST everything on index.HTML. 
+// don't ...FIND on VIDEO
 
 // Q2: Write the function printIntRev(n) taking one parameter n and print all natural numbers in reverse in console (from n to 1).
 // Hint: reverse loop in Q1 (same as above)
-function printInt(n) {
-    // This needs to be a loop(forloop)
-    for (var i= 1; i<=n, i++) {
-        // console.log it out :)
-        console.log(i);
+function printIntRev(n) {
+ 
+	for(let i = 1; i>=1 ; i--) {
+		console.log(i);
     }
 }
+printIntRev(50)
 
 // Q3: Write the function checkInput(x) taking one parameter x and return the string ‘number’ if x is a number; return the string ‘string’ if x is a string; and return ‘boolean’ if x is a boolean. Otherwise returns -1. 
 Examples:
