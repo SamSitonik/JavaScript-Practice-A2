@@ -1,19 +1,27 @@
+console.log(doSomething);
+doSomething();
+
+function doSomething() {
+	console.log("Declare Something");
+}
+
 // Final Answers
 // Q1:
-// function printInt(n) {
-//   for (var i = 1; i <= n; i++) {
-//     console.log(i);
-//   }
-// }
-// printInt(100);
-// Q2:
-function printIntReverse(n) {
+function printInt(n) {
   for (var i = 1; i <= n; i++) {
-    // console.log it out :)
     console.log(i);
   }
 }
-printIntReverse(5);
+printInt(0);
+
+// Q2:wrong
+// function printIntReverse(n) {
+//   for (var i = 1; i <= n; i++) {
+//     // console.log it out :)
+//     console.log(i);
+//   }
+// }
+// printIntReverse(5);
 // Q3:
 
 // Q4:
