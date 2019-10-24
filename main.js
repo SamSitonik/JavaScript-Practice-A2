@@ -79,24 +79,109 @@
 
 // Q7:
 
-function findDiff(arr) {}
+// function findDiff(arr) {
+//     var min = arr[0];
+//     var max = arr[0];
+//     var length= arr.length;
+
+//     for (var i = 0; i < length; i++) {
+//         if (arr[i] < min) {
+//             min = arr[i];
+//           }
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }     
+//     }
+//     return max - min;
+// }
+// console.log(findDiff([1,5,10,15,20,100]));
 
 // Q8:
 
-// dffsdf
+// function timeConvert(num) {
+//     var hours = parseInt(num / 60);
+//     var mins = num % 60;
+//     var solution = hours +":"+ mins;
+
+//     return solution
+// }
+// console.log(timeConvert(5555))
 
 // Q9:
 
-// sl;dflg
+// function findStr(str,long) { 
+//     var strLength = str.length;
+//     var longLength = long.length;
+//     var counter = 0;
+
+// for (var i = 0; i <= longLength-strLength; i++) {
+//     if (str === long.slice(i, i+strLength)) {
+//         counter++;
+//     }
+// }
+// return counter;
+// }
+// console.log(findStr("bo","JamboRamboBobo"));
 
 // Q10:
 
-// dfkgkldfm
+// function selfDividingNumbers(left,right) {
+//     var solution = [];
+//     for (var i = left; i <= right; i++) {
+//         if (checkSelfDividing(i)) {
+//         solution.push(i);
+//         }
+//     }
+//     return solution;
+// }
+
+//     // Helper Function to check
+//     function checkSelfDividing(num) {
+//         var numString = num.toString();
+//         var numArray = numString.split("");
+//         var length = numArray.length;
+
+//     for (var i = 0; i < length; i++) {
+//         if (num % parseInt(numArray[i]) !== 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(selfDividingNumbers(12,21));
 
 // Q11:
 
-// lsdfkgkmg
+// function moveZeros(nums) {
+//     var solution = [];
+//     var counter = 0;
+//     var length = nums.length;
+
+//     for (var i = 0; i < nums.length; i++){
+//         if (nums[i] === 0) {
+//             counter ++;
+//         } else {
+//             solution.push(nums[i]);
+//         }
+//     }
+//     while (counter > 0) {
+//         solution.push(0);
+//         counter--;
+//     }
+//     return solution;
+// }
+// console.log(moveZeros([0,1,0,3,12]));
 
 // Q12:
 
-// fmgmsfkg
+// function average(nums) {
+//     var sum = 0;
+//     var length = nums.length;
+
+//     for (var i = 0; i < length; i++) {
+//         sum += nums[i];
+//     }
+//     return sum / length;
+// }
+// console.log(average([2,3,3,5,7,10]));

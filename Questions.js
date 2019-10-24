@@ -138,9 +138,37 @@ findDiff([24, 22, 23, 22, 24]) =======> 2 (Because 24 - 22 = 2)
 findDiff([1, 1, 1, 1, 1]) =======> 0 
 findDiff([1]) ======> 0;
 findDiff([]) =======> 0;
-Hint: 1)Looking for max, 2)Looking for min 3) min -> max - min.Use a loop to subtract min from max, Check online
+Hint: 1)Looking for max, 2)Looking for min 3) min -> max - min.
 
-function findDiff(arr) {}
+
+function findDiff(arr) {
+    var solution = "";
+    var nums = [1, 2, 3]
+Math.min.apply(Math, nums)    // 1
+Math.max.apply(Math, nums)    // 3
+
+
+
+// looking for min
+
+
+
+// looking for max
+function findDiff(arr) {
+    var solution = "";
+    var Math.max =[i]
+    var Math.min =[i]
+
+// Use a loop to subtract min from max, Check online
+for (let i = arr.length; 0<= i; i++) {
+    
+  solution -= Math.min[i]; 
+}
+return solution;
+}
+console.log(findDiff([1,5,10,15,20]));
+
+// Ask Shiyu if this is another way to get the answer, later
 
 // Q8: Write the function timeConvert(num) taking a number as parameter and return the number of hours and minutes the parameter converts to. Separate the number of hours and minutes with a colon.
 	Example:
@@ -148,9 +176,22 @@ function findDiff(arr) {}
     timeConvert(63) =======> 1:3
     timeConvert(120)======> 2:0
     timeConvert(59)=======> 0:59
-    Hint: Dividing(/) and modulo(%) the number 60. NO loop needed!
+// Hint: Dividing(/) and modulo(%) the number 60. NO loop needed!
+My mind did go to loop right away
 
-function timeConvert(num)
+function timeConvert(num) {
+var hours= x;
+var minutes= y;
+var solution= "x:y";
+
+x / 60
+return solution 
+
+// parseInt-online-function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems). JavaScript Demo: Standard built-in objects - parseInt() ... 
+
+}
+}
+console.log(timeConvert(120))
 
 // Q9: Write the function findStr(str, long) taking two strings as parameters and return how many str you can find in long. Assume Str is not empty string.
 Example:
@@ -160,7 +201,18 @@ findStr(“ha”,”abcde”)=======> 0
 findStr(“h”, “hihelloho”)======> 3
 Hint: HARD! loop through the long string, to check if there is any "str"
 
-function findStr(str,long)      // <--paramaters
+function findStr(str,long)   {   // <--paramaters
+    var str = [0];
+    var long= [0];
+    var counter = 0;
+// loop through a string, NOT an array
+for (let i = 0; i<=long.length-str.length; i++) {
+    if(str === long[i, i+strLength])
+    // slice
+}
+return 
+}
+console.log(findStr("bo","jambo"));
 
 // Q10- Write the function selfDividingNumbers(left, right) taking two number bound as parameters and returns an array of every possible self dividing number between 
 them, including the bounds. 
@@ -172,7 +224,43 @@ Examples:
 	selfDividingNumbers(1, 10) =======> [1,2,3,4,5,6,7,8,9]
 selfDividingNumbers(12, 21) =======> [12, 15]
 
-function selfDividingNumbers(left, right) {}
+function selfDividingNumbers(left, right) {
+    var left= ;
+    var right= ;
+    var solution []; 
+
+    for(i=left;i<=right;i++) {
+// check if current number is self dividing number
+    }
+return solution;
+}
+console.log(selfDividingNumbers(left, right))
+
+function selfDividingNumbers(left, right) {
+    var solution = []; 
+
+    for(var i=left; i<=right; i++) {
+        if (checkSelfDividingNumber(i)) {
+        solution.push(i);
+        }
+    }
+
+return solution;
+}
+// helper function to check if # is self-dividing
+function checkSelfDividing(num) {
+    var numString = num.toString();
+    var numArray = numString.split("");
+    var length = numArray.length;
+
+    for (var i=0; i<length; i++) {
+        if (num % parseInt(numArray[i]) !== 0) {
+            return false;       // <--stop function
+        }
+    }
+    return true;
+}
+console.log(selfDividingNumbers(1,10));
 
 // Q11-  video
 11. Write the function moveZeros(nums) taking an array of numbers and move all 0’s to the end of it while maintaining the relative order of the non-zero elements.  For example:
@@ -189,7 +277,7 @@ function moveZeros(nums{
         temp=nums.splice(i,1)
         nums(push(temp[0]));
     }
-})
+}
 
 
 // Q12- Create an average(nums) function that calculates the average of an array of numbers.
